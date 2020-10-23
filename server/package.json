@@ -1,0 +1,25 @@
+{
+  "name": "plants_for_life",
+  "version": "1.0.0",
+  "description": "Deliver all plants informations in one place",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnmuthu/plants_for_life.git"
+  },
+  "author": "Nachimuthu Vellingiri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vnmuthu/plants_for_life/issues"
+  },
+  "homepage": "https://github.com/vnmuthu/plants_for_life#readme",
+  "dependencies": {
+    "apollo-server": "^2.18.2",
+    "axios": "^0.20.0",
+    "graphql": "^15.3.0"
+  }
+}
