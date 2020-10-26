@@ -16,12 +16,12 @@ const GET_PLANTS = gql`
 `
 
 const Plant = ({ plant: { common_name, family_common_name, year, image_url } }) => (
-  <div className="Card">
+  <div className="plant">
     <div>
-      <img alt={common_name} className="Card--avatar" src={image_url} width="300" />
-      <h2 className="Card--name">{common_name}</h2>
-      <p>{family_common_name}</p>
-      <p><i>{year}</i></p>
+      <img alt={common_name} className="plant-image" src={image_url} width="300" />
+      <h2 className="plant-name">{common_name}</h2>
+      <p className="plant-family-name">{family_common_name}</p>
+      <p className="plant-year"><i>{year}</i></p>
     </div>
   </div>
 )

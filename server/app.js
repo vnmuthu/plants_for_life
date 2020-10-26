@@ -40,4 +40,4 @@ const server = new ApolloServer({
     resolvers,
   })
 
-  server.listen().then(({ url }) => console.log(`Server ready at ${url}`));
+  server.listen().then(({ url }) => console.log(`Your GraphQL Server is ready at ${url}`));
