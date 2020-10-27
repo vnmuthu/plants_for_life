@@ -20,7 +20,9 @@ const resolvers = {
       plants: async () => {
         try {
           const plants = await axios.get("https://trefle.io/api/v1/plants?filter_not%5Bedible_part%5D=null&token=teffds_KrxlJYfrs-7jXaic21UVeDdo-SlrtFfDVdn8")
-          return plants.data.data.map(({ id, common_name, family_common_name, year, image_url }) => ({
+          const plantData = plants && plants.data;
+
+          return plantData.data.map(({ id, common_name, family_common_name, year, image_url }) => ({
             id,
             common_name,
             family_common_name,
