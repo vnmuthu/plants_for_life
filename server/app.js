@@ -6,7 +6,7 @@ const typeDefs = gql`
         id: ID
         common_name: String
         family_common_name: String
-        year: String
+        year: Int
         image_url: String
     }
 
